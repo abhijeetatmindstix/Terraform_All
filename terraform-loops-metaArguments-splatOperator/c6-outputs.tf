@@ -23,8 +23,3 @@ output "legacy_splat_instance_publicdns" {
   value = aws_instance.myec2.*.public_dns
 }  
 
-# Output Latest Generalized Splat Operator - Returns the List
-output "latest_splat_instance_publicdns" {
-  description = "Generalized Splat Expres
-  value = aws_instance.myec2[*].public_dns
-}
